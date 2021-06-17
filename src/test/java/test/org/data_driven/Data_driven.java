@@ -20,7 +20,7 @@ public class Data_driven {
 		File f = new File("C:\\Users\\Ashwin Babu\\Documents\\Selenium Learning\\Demo.xlsx");
 		FileInputStream f1 = new FileInputStream(f);
 		Workbook w= new XSSFWorkbook(f1);
-		Sheet sheet = w.getSheet("Input");
+		Sheet sheet = w.getSheet("Sheet");
 		for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
 			Row row = sheet.getRow(i);
 			for (int j = 0; j < row.getPhysicalNumberOfCells(); j++) {
